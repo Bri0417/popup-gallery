@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container header-align">
+            <div class="logo">
+                <h1>My Website</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner Section -->
+    <section class="banner-slider">
+        <div class="slide active" style="background-image: url('banner1.jpg');">
+            <div class="container">
+                <h2>Welcome to My Website</h2>
+                <p>Your one-stop solution for web design and development.</p>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('banner2.jpg');">
+            <div class="container">
+                <h2>Quality Services</h2>
+                <p>We provide top-notch web development services to help your business grow.</p>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('banner3.jpg');">
+            <div class="container">
+                <h2>Contact Us Today</h2>
+                <p>Let's discuss how we can bring your vision to life.</p>
+            </div>
+        </div>
+        <div class="banner-nav">
+            <span class="prev">&#10094;</span>
+            <span class="next">&#10095;</span>
+        </div>
+    </section>
+
+    <!-- Dynamic Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <!-- <div class="row justify-content-md-center">
+                <h2>Our Gallery</h2>
+                <div class="grid">
+                    <div class="grid-item"><img src="https://via.placeholder.com/400x300.png?text=Image+1" alt="Image 1"></div>
+                    <div class="grid-item"><img src="https://via.placeholder.com/400x300.png?text=Image+2" alt="Image 2"></div>
+                    <div class="grid-item"><img src="https://via.placeholder.com/400x300.png?text=Image+3" alt="Image 3"></div>
+                    <div class="grid-item"><img src="https://via.placeholder.com/400x300.png?text=Image+4" alt="Image 4"></div>
+                    <div class="grid-item"><img src="https://via.placeholder.com/400x300.png?text=Image+5" alt="Image 5"></div>
+                    <div class="grid-item"><img src="https://via.placeholder.com/400x300.png?text=Image+6" alt="Image 6"></div>
+                </div>
+            </div>  -->
+
+<div id="gallery" class="gallery">
+    <!-- Gallery items will be dynamically generated here -->
+</div>
+
+<div id="popup-slider" class="popup">
+    <span class="close">&times;</span>
+    <div class="slider">
+        <img id="popup-image" src="" alt="Popup Image">
+    </div>
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+</div>
+        </div>
+    
+    </section>
+
+ 
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Website. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="gallery.js"></script>
+</body>
+</html>
