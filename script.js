@@ -16,17 +16,17 @@ const galleryData = [
         images: ['images/img-6.jpg', 'images/img-7.jpeg', 'images/img-4.jpg']
     },
     {
-        title: 'Movie 1',
+        title: 'Movie 4',
         thumbnail: 'images/img-7.jpeg',
         images: ['images/img-1.jpeg', 'images/img-2.jpg', 'images/img-3.jpg']
     },
     {
-        title: 'Movie 2',
+        title: 'Movie 6',
         thumbnail: 'images/img-5.jpg',
         images: ['images/img-8.jpg', 'images/img-4.jpg', 'images/img-5.jpg']
     },
     {
-        title: 'Movie 3',
+        title: 'Movie 6',
         thumbnail: 'images/img-4.jpg',
         images: ['images/img-6.jpg', 'images/img-7.jpeg', 'images/img-8.jpg']
     },
