@@ -21,7 +21,7 @@ const galleryData = [
         images: ['images/img-1.jpeg', 'images/img-2.jpg', 'images/img-3.jpg']
     },
     {
-        title: 'Movie 6',
+        title: 'Movie 5',
         thumbnail: 'images/img-5.jpg',
         images: ['images/img-8.jpg', 'images/img-4.jpg', 'images/img-5.jpg']
     },
