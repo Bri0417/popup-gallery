@@ -7,13 +7,13 @@ const galleryData = [
     },
     {
         title: 'Movie 2',
-        thumbnail: 'images/img-9.jpg',
+        thumbnail: 'images/img-3.jpg',
         images: ['images/img-9.jpg', 'images/img-4.jpg', 'images/img-5.jpg']
     },
     {
         title: 'Movie 3',
         thumbnail: 'images/img-6.jpg',
-        images: ['images/img-6.jpg', 'images/img-7.jpg', 'images/img-8.jpg']
+        images: ['images/img-6.jpg', 'images/img-7.jpeg', 'images/img-8.jpg']
     },
     // Add more items as needed
 ];
@@ -53,12 +53,12 @@ function createGallery() {
 function openSlider(index) {
     currentImages = galleryData[index].images;
     currentIndex = 0;
-    showSlide(currentIndex);
+    showGallerySlide(currentIndex);
     popupSlider.style.display = 'flex';
 }
 
 // Function to show a specific slide
-function showSlide(index) {
+function showGallerySlide(index) {
     if (index >= currentImages.length) {
         currentIndex = 0;
     } else if (index < 0) {
@@ -70,7 +70,7 @@ function showSlide(index) {
 // Function to change slides
 function changeSlide(step) {
     currentIndex += step;
-    showSlide(currentIndex);
+    showGallerySlide(currentIndex);
 }
 
 // Close the popup slider when the close button is clicked
@@ -119,5 +119,5 @@ prevSlideBtn.addEventListener('click', () => {
 setInterval(() => {
     currentSlide = (currentSlide + 1) % slides.length;
     showSlide(currentSlide);
-}, 15000); // Change slide every 5 seconds
+}, 5000); // Change slide every 5 seconds
 
