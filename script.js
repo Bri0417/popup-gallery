@@ -8,7 +8,7 @@ const galleryData = [
     {
         title: 'Movie 2',
         thumbnail: 'images/img-3.jpg',
-        images: ['images/img-9.jpg', 'images/img-4.jpg', 'images/img-5.jpg']
+        images: ['images/img-8.jpg', 'images/img-4.jpg', 'images/img-5.jpg']
     },
     {
         title: 'Movie 3',
