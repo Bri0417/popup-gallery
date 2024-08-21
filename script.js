@@ -79,11 +79,11 @@ closeBtn.addEventListener('click', () => {
 });
 
 // Close the popup slider when clicking outside the image
-window.addEventListener('click', (e) => {
-    if (e.target === popupSlider) {
-        popupSlider.style.display = 'none';
-    }
-});
+// window.addEventListener('click', (e) => {
+//     if (e.target === popupSlider) {
+//         popupSlider.style.display = 'none';
+//     }
+// });
 
 // Initialize the gallery on page load
 createGallery();
